@@ -68,3 +68,6 @@ but we'll take it into consideration for the final evaluation
 After getting the key execute:
 
 `openssl aes-256-cbc -d -a -in INSTRUCTIONS.locked -out INSTRUCTIONS.pdf -k [your_key]`
+
+Now that you have `INSTRUCTIONS.pdf`, open the file and follow the instructions
+
