@@ -19,25 +19,13 @@ implement the way you would in a real world scenario.(However, keep in mind that
 for our final evaluation). So our suggestion to you is to do the whole test at once if you can.
 Reserve some time for it and do not split it.
 
-To build the required application you can choose between *alternative 1* and *alternative 2*
-
-### Alternative 1
+### The challenge
 
 1. Ruby on Rails v4.x or superior (required)
 2. Twitter Bootstrap v3.x or superior (required)
 
 If you stick with this alternative we will look mainly to your skills 
 with Rails and your ability to build well crafted web components using HTML + CSS
-
-### Alternative 2 
-
-1. Any web framework or technology of your choice (PHP & Laravel, Django). Using Rails
-(even if it is not your expertise) is definetly a plus
-2. Vue.js (required)
-3. Twitter Bootstrap v3.x or superior (required)
-
-If you choose alternative 2 we'll be looking mainly to your front-end development skills,
-specially your fluency with Vue.js.
 
 ## Starting the test
 
