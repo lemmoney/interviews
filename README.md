@@ -23,39 +23,26 @@ Reserve some time for it and do not split it.
 
 1. Ruby on Rails v4.x or superior (required)
 2. Twitter Bootstrap v3.x or superior (required)
+3. Openssl (para sistemas operacionais que não sejam Mac ou Linux)
 
 If you stick with this alternative we will look mainly to your skills 
 with Rails and your ability to build well crafted web components using HTML + CSS
 
 ## Starting the test
 
-After choosing one of the options above and setting up your environment
-you are ready to follow the test intructions.
+After installing the libraries above and setting up your environment, you are ready to follow the test instructions.
 
-We advise you to install `openssl`, which is probably installed by default 
-if you are a MacOS or Linux user.
+Instructions for testing are in **INSTRUCTIONS.pdf**. In order to verify that you are doing the correct test and that the contents of the file have not been altered by unauthorized third parties or damaged during the transfer process. We encrypted **INSTRUCTIONS.pdf** in **INSTRUCTIONS.locked** with a block cipher algorithm using a symmetric key.
 
-Before you carry on, **INSTRUCTIONS.locked** has been encrypted with a block cipher
-algorithm using a symmetric key.
+To decrypt **INSTRUCTIONS.locked** we need you to send us a computed checksum of **INSTRUCTIONS.locked** using the same hashing algorithm used by **git to produce confirmation hashes.**
 
-To double check that you are doing the right test and that the file content has neither been altered
-by an unauthorized third party, nor been damaged during the transfer process, we need you to send us
-a computed checksum of **INSTRUCTIONS.locked** using the same hashing algorithm used by **git to
-produce commit hashes**
+Send a `GET` request to `http://interviews.lemoney.com` with the parameter checksum that contains the computed `checksum` for **INSTRUCTIONS.locked** and the `email` with your email address. If the request is correct, our server will return the key required to unlock the instructions for your test.
 
-Just send a `GET` request to `http://interviews.lemoney.com` with the parameters
-`checksum` containing the computed checksum of **INSTRUCTIONS.locked** and `email` containing your email address.
-If the request is correct our server will return the key you need to unlock 
-the instructions for your test.
+IMPORTANT: When you send the GET request, we know that you have started your test. Just to clarify again, you have all the time necessary to take the test, but we will take it into account in the final assessment
 
-IMPORTANT: When you send the GET request to us we know that you started
-your test. Just to make it clear again, you have all the time you need to do the test,
-but we'll take it into consideration for the final evaluation
+After obtaining the key, run:
 
+`openssl aes-256-cbc -d -md md5 -a -em INSTRUCTIONS.locked -out INSTRUCTIONS.pdf -k [your_key]`
 
-After getting the key execute:
-
-`openssl aes-256-cbc -d -md md5 -a -in INSTRUCTIONS.locked -out INSTRUCTIONS.pdf -k [your_key]`
-
-Now that you have `INSTRUCTIONS.pdf`, open the file and follow the instructions
+Now that you have the **INSTRUCTIONS.pdf** file, open the file and follow the instructions
 
