@@ -23,7 +23,7 @@ Reserve some time for it and do not split it.
 
 1. Ruby on Rails v4.x or superior (required)
 2. Twitter Bootstrap v3.x or superior (required)
-3. Openssl (para sistemas operacionais que não sejam Mac ou Linux)
+3. Openssl (for non Mac and Linux users)
 
 If you stick with this alternative we will look mainly to your skills 
 with Rails and your ability to build well crafted web components using HTML + CSS
