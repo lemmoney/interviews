@@ -44,7 +44,7 @@ After obtaining the key, run:
 
 `openssl aes-256-cbc -d -md md5 -a -em INSTRUCTIONS.locked -out INSTRUCTIONS.pdf -k [your_key]`
 
-PS: This step is useful to let us know if you're able to research for solutions and solve unexpected problems that could happen.
+PS: This step is useful to let us know if you're able to research solutions and solve unexpected problems that could happen.
 
 Now that you have the **INSTRUCTIONS.pdf** file, open the file and follow the instructions
 
