@@ -42,7 +42,7 @@ IMPORTANT: When you send the GET request, we know that you have started your tes
 
 After obtaining the key, run:
 
-`openssl aes-256-cbc -d -md md5 -a -em INSTRUCTIONS.locked -out INSTRUCTIONS.pdf -k [your_key]`
+`openssl aes-256-cbc -d -md md5 -a -in INSTRUCTIONS.locked -out INSTRUCTIONS.pdf -k [your_key]`
 
 PS: This step is useful to let us know if you're able to research solutions and solve unexpected problems that could happen.
 
