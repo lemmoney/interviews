@@ -21,7 +21,7 @@ Reserve some time for it and do not split it.
 
 ### The challenge
 
-1. Ruby on Rails v4.x or superior (required)
+1. Ruby on Rails v4.x (or superior) or NodeJS (required and depends on the job vacancy in question)
 2. Twitter Bootstrap v3.x or superior (required)
 3. Openssl (for non Mac and Linux users)
 
