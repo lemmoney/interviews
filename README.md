@@ -1,50 +1,58 @@
-# Lemoney Test
+# Test Lemoney Node.js 
 
-The main goal of our coding interview is emulating real world problems we face daily at
-Lemoney rather than asking you to solve math puzzles or asking you the performance or complexity of
-an algorithm. To make some fun out of it, the cartoon below shows a smart way of solving the
-travelling salesman problem, which is commonly asked on coding interviews
+### O que queremos avaliar? 
 
-<p style='text-align:center'>
-  <img src='travelling_salesman_problem.png'/>
-</p>
+1 - Capacidade de resolver problema 
 
-We believe that code should be smart and organized and most of all, when you are working
-with a team it should follow a common GUIDELINE
+2 - Aplicação de conceitos de programação ( Clean Code - Commit Semântico - Padrões de Projetos - SOLID)
 
-## Requirements for the test
+3 - É capaz de questionar/comunicar ( dúvidas - impedimentos -sugestões)
 
-There are no time constraints to make the test, so you have all the time you need to research and
-implement the way you would in a real world scenario.(However, keep in mind that **time counts**
-for our final evaluation). So our suggestion to you is to do the whole test at once if you can.
-Reserve some time for it and do not split it.
 
-### The challenge
+### Qual problema devo resolver?
 
-1. Ruby on Rails v4.x or superior (required)
-2. Twitter Bootstrap v3.x or superior (required)
-3. Openssl (for non Mac and Linux users)
+A Lemoney possui como um de seus projetos o OpenCashback como api de serviço. Que gerência para um contratante sua estrutura de cashback em sua loja. Nesse contexto o desafio é implementar uma pequena aplicação com um front e um back que crie essa dinâmica onde um usuário irá cadastrar via interface um [programa de cashback](#programa-de-cashback), possuindo, um **identificador de produto**, **valor de programa em reais**, **valor do programa em porcentagem**, **status**, **data de início**, **data de fim**. E esse Back deve expor para o mundo um endpoint que ao passarmos o **identificador de produto** e o **valor do Produto** retorne quando de cashback o cliente terá caso compre o mesmo. 
 
-If you stick with this alternative we will look mainly to your skills
-with Rails and your ability to build well crafted web components using HTML + CSS
+**FRONT**: 
 
-## Starting the test
+** Requisitos Mínimos **
 
-After installing the libraries above and setting up your environment, you are ready to follow the test instructions.
++ Criar form de criação de programas
++ Listar programas criados 
++ Editar Programas criados
++ Deletar programas criados 
 
-Instructions for testing are in **INSTRUCTIONS.pdf**. In order to verify that you are doing the correct test and that the contents of the file have not been altered by unauthorized third parties or damaged during the transfer process. We encrypted **INSTRUCTIONS.pdf** in **INSTRUCTIONS.locked** with a block cipher algorithm using a symmetric key.
+**Liberdades**:
 
-To decrypt **INSTRUCTIONS.locked** we need you to send us a computed checksum of **INSTRUCTIONS.locked** using the same hashing algorithm used by **git to produce confirmation hashes.**
+> Escolher o frameworks. bibliotecas e layout livres.
+>
+> __Sugestão__: Usar Vue.js
 
-Send a `GET` request to `http://interviews.lemoney.com` with the parameter checksum that contains the computed `checksum` for **INSTRUCTIONS.locked** and the `email` with your email address. If the request is correct, our server will return the key required to unlock the instructions for your test.
 
-IMPORTANT: When you send the GET request, we know that you have started your test. Just to clarify again, you have all the time necessary to take the test, but we will take it into account in the final assessment
 
-After obtaining the key, run:
+**BACK**:
 
-`openssl aes-256-cbc -d -md md5 -a -in INSTRUCTIONS.locked -out INSTRUCTIONS.pdf -k [your_key]`
+** Requisitos Mínimos **
 
-PS: This step is useful to let us know if you're able to research solutions and solve unexpected problems that could happen.
+ + CRUD de programas de cashback
+ + Endpoint de quanto de cashback o produto terá
 
-Now that you have the **INSTRUCTIONS.pdf** file, open the file and follow the instructions
+ **Liberdades**: 
+> Escolher framework in Node.jS
+>
+> __Sugestão__: Usar  Fastify com TypeORM
 
+
+### Observações 
+
+1 - Mesmo sugerindo frameworks específicos você é livre para usar qualquer framework no front e qualquer framework de Node.js no back.  
+
+2  - O projeto deve ser entregue em repositório do github se possível usando uma imagem docker para facilitar a compatibilidade.
+
+3 - 
+
+ ## Glossário 
+
+ ## Programa de Cashback
+
+ O programa de cashback é um conjunto de regras como valor e data de validade de um cashback. Portanto se tenho um produto que custa R$100,00 vinculado a um programa que me dá 10% de cashback. No final terei um retorno de R$10,00 de cashback.
