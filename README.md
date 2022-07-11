@@ -15,7 +15,7 @@ A Lemoney possui como um de seus projetos o OpenCashback como api de serviço. Q
 
 **FRONT**: 
 
-** Requisitos Mínimos **
+**Requisitos Mínimos**
 
 + Criar form de criação de programas
 + Listar programas criados 
@@ -32,7 +32,7 @@ A Lemoney possui como um de seus projetos o OpenCashback como api de serviço. Q
 
 **BACK**:
 
-** Requisitos Mínimos **
+**Requisitos Mínimos**
 
  + CRUD de programas de cashback
  + Endpoint de quanto de cashback o produto terá
@@ -49,7 +49,6 @@ A Lemoney possui como um de seus projetos o OpenCashback como api de serviço. Q
 
 2  - O projeto deve ser entregue em repositório do github se possível usando uma imagem docker para facilitar a compatibilidade.
 
-3 - 
 
  ## Glossário 
 
