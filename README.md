@@ -47,7 +47,9 @@ A Lemoney possui como um de seus projetos o OpenCashback como api de serviço. Q
 
 1 - Mesmo sugerindo frameworks específicos você é livre para usar qualquer framework no front e qualquer framework de Node.js no back.  
 
-2  - O projeto deve ser entregue em repositório do github se possível usando uma imagem docker para facilitar a compatibilidade.
+2 - O projeto deve ser entregue em repositório do github se possível usando uma imagem docker para facilitar a compatibilidade.
+
+3 - Um diferêncial é o deploy dessa aplicação em um serviço de nuvem como heroku, aws ou gcp. 
 
 
  ## Glossário 
